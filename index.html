@@ -30,41 +30,10 @@
  <td><center>sekund</center></td>
  </tr>
  </table><br><br><br><br><br><br><br>
- <table id="tablee">
- <tr>
- <th id="counter">Ilość osób online:</th>
- </tr>
- <tr>
- <td><span id="userCount">loading…</span></td>
- </tr>
- </table>
+<div id="result"></div>
 </div>
-
   	<!-- /NAV BAR -->
 <script type="text/javascript">
-$().ready(function (){
-  var token = '';
-  var pinger = setInterval(function (){
-    
-    $.ajax({
-      cache: false,
-      data: {
-        token: token,
-      },
-      timeout: 2500,
-      type: 'GET',
-      url: 'pinger.php',
-      dataType: 'json',
-      success: function (data, status, jqXHR){
-        $('#userCount').text(data.userCount);
-        token = data.token;
-      }
-    });
-    
-  }, 5000);
-});
-</script>
-  	<script type="text/javascript">
 	function countdown() 
 	{
 		var now = new Date();
@@ -92,7 +61,34 @@ $().ready(function (){
 		setTimeout(countdown,1000);
 		}
 	countdown();
-	</script>		
+</script>		
+
+
+<script type="text/javascript">
+function clickCounter() {
+    if(typeof(Storage) !== "undefined") 
+    {
+        if (sessionStorage.clickcount)
+         {
+            sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+         }
+        else 
+         {
+            sessionStorage.clickcount = 1;
+         }
+
+      document.getElementById("result").innerHTML = "Online:"+ sessionStorage.clickcount;
+    } 
+    else
+    {
+      document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
+    window.onload = function() {
+    clickCounter(); };
+</script>
+
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
