@@ -150,13 +150,6 @@ body{
   background-repeat:no-repeat;
   height: 46vh;
   filter:opacity(0.5);
-  
-  
-  -webkit-animation: spin 6s linear 0s infinite normal;
-  -moz-animation: spin 6s linear 0s infinite normal;
-  -ms-animation: spin 6s linear 0s infinite normal;
-  -o-animation: spin 6s linear 0s infinite normal;
-  animation: spin 6s linear 0s infinite normal;
 }
 
 .spiral:hover
