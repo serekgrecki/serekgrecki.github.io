@@ -1,0 +1,352 @@
+body{
+}
+
+.startPage
+{
+    background: url("img/startpage.jpg") center center no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+.menu
+{
+    background: black;
+    height: 10vh;
+    color:white;
+    font-size: 2.2rem;
+}
+.menu a {
+    color: white;
+    font-weight: bold;
+}
+.aboutUsPage
+{
+    background: black;
+    height: 100vh;
+}
+.projectsPage
+{
+    background-image: url(img/startpage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.offerPage
+{
+    background-image: url(img/offer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.contactPage
+{
+    background-image: url(img/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+
+}
+.title
+{
+    background: rgba(0,0,0,0.6);
+    color: white;
+    height: 8vh;
+    text-align: center;
+    margin: 0.5rem !important;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.titleUnder
+{
+    background: rgba(0,0,0,0.6);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0rem 0.5rem !important;
+    height: 6vh;
+        
+}
+.textContact {
+    background: rgba(0,0,0,0.6);
+    height:72vh;
+    color: white;
+    text-align: center;
+    margin: 0.5rem !important;
+    
+}
+.text
+{
+    background: rgba(0,0,0,0.6);
+    height: 87vh;
+    color: white;
+    text-align: center;
+    margin: 0.5rem;
+}
+.footer {
+    background: black;
+    height: 10vh;
+    text-align: center;
+}
+.footer h6{
+    color: dimgray;
+    font-size: 70%;
+}
+.footer h4{
+    color: darkgray;
+    font-size: 70%;
+}
+.textAbout
+{
+    background: rgba(255,255,255,0.3);
+    color: white;
+    text-align: center;
+    margin: 2rem;
+    font-size: 150;
+    padding: 1rem;
+}
+.titleAbout
+{
+    background: rgba(255,255,255,0.3);
+    color: white;
+    height: 8vh;
+    text-align: center;
+    margin: 0.5rem !important;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.spirall {
+  background-repeat:no-repeat;
+  height: 30vh;
+  
+  
+  -webkit-animation: spin 6s linear 0s infinite normal;
+  -moz-animation: spin 6s linear 0s infinite normal;
+  -ms-animation: spin 6s linear 0s infinite normal;
+  -o-animation: spin 6s linear 0s infinite normal;
+  animation: spin 6s linear 0s infinite normal;
+}
+
+.spiralll {
+  background-repeat:no-repeat;
+  height: 46vh;
+  filter:opacity(0.5);
+  
+  
+  -webkit-animation: spin 6s linear 0s infinite normal;
+  -moz-animation: spin 6s linear 0s infinite normal;
+  -ms-animation: spin 6s linear 0s infinite normal;
+  -o-animation: spin 6s linear 0s infinite normal;
+  animation: spin 6s linear 0s infinite normal;
+}
+
+.spiralll:hover
+{
+    filter:opacity(1);
+    filter:brightness(2);
+}
+
+.spiral {
+  background-repeat:no-repeat;
+  height: 46vh;
+  filter:opacity(0.5);
+  
+  
+  -webkit-animation: spin 6s linear 0s infinite normal;
+  -moz-animation: spin 6s linear 0s infinite normal;
+  -ms-animation: spin 6s linear 0s infinite normal;
+  -o-animation: spin 6s linear 0s infinite normal;
+  animation: spin 6s linear 0s infinite normal;
+}
+
+.spiral:hover
+{
+    filter:opacity(1);
+    filter:brightness(2);
+}
+@keyframes spin {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+@-webkit-keyframes spin {
+  0% {-webkit-transform: rotate(360deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}
+@-ms-keyframes spin {
+  0% {-ms-transform: rotate(360deg); }
+  100% { -ms-transform: rotate(0deg); }
+}
+@-moz-keyframes spin {
+  0% { -moz-transform: rotate(360deg); }
+  100% { -moz-transform: rotate(0deg); }
+}
+@-o-keyframes spin {
+  0% { -o-transform: rotate(360deg); }
+  100% { -o-transform: rotate(0deg); }
+}
+@keyframes first {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.fader
+{
+  background-image: url("img/startpage.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  z-index: -99;
+}
+
+.layerProjects
+{
+    
+    position: absolute;
+    background: rgba(255,255,255,0.3);
+    color: black;
+    height: 96vh;
+    width: 98%;
+    z-index: 100;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+}
+.textProjects
+{
+    background: rgba(0,0,0,0.6);
+    height: 85vh;
+    color: white;
+    text-align: center;
+    margin: 0.5rem !important;
+}
+.titleProjects
+{
+    background: rgba(0,0,0,0.6);
+    color: white;
+    height: 7vh;
+    text-align: center;
+    margin: 0.5rem !important;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+
+.clearfix{
+    clear:both;
+}
+
+#conta {
+    background: #333;
+    overflow: auto;
+    margin: 2rem auto;
+    border: #666 solid 2px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    padding-top: 1rem;
+}
+
+#audio-title
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+input#volume{
+    background:#ccc;
+    height: 1px;
+    -webkit-appearance:none!important;
+}
+input#volume::-webkit-slider-thumb
+{
+    -webkit-appearance:none!important;
+    background: url("images/knob.png");
+    width: 12px;
+    height: 12px;
+        
+}
+#buttons{
+    display: block;
+    overflow: auto;
+}
+button#prev
+{
+    background: url("images/prev.png") center no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 40px;
+    border: none!important;
+}
+button#play
+{
+    background: url("images/play.png") center no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border: none!important;
+}
+button#pause
+{
+    background: url("images/pause.png") center no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border: none!important;
+}
+button#stop
+{
+    background: url("images/stop.png") center no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border: none!important;
+}
+button#next
+{
+    background: url("images/next.png") center no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 40px;
+    border: none!important;
+}
+
+#playlist
+{
+    list-style-type: none;
+    padding: 10px;
+}
+
+#playlist li{
+    cursor: pointer;
+    margin: 5px;
+}
+#playlist li.active
+{
+    font-weight: bold;
+    background: #666;
+    padding: 3px;
+    
+}
+#progress {
+    background: url("images/progress.png") no-repeat;
+    height: 10px;
+    float: left;
+}
+#duration {
+    position: absolute;
+    top:0;
+    right: 10px;
+    background: #000;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    padding-top: 1rem;
+}
+#tracker {
+    position: relative;
+    width: 100%;
+    background: red;
+}
+navbar navbar-inverse bg-inverse
+{
+    background: black!important;
+}
