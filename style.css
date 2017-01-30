@@ -1,11 +1,19 @@
 body{
 }
 
+.logoM
+{
+    background: url(img/logo_face.png) center;
+    background-size: cover;
+    height: 70vh;
+    margin: 35px 3px;
+}
+
 .logo
 {
     background: url(img/logo_bg.png) center;
     background-size: cover;
-    height: 70vh;
+    height: 65vh;
 }
 .logo:hover
 {
