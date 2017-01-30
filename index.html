@@ -2,14 +2,24 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="FunkyBeatz - Oficjalna strona formacji Funkybeatz & MANAGEMENT, BOOKING KONCERTÓW: tel. +48 511 284 414 lub alexd.mikec@gmail.com">
+  <meta name="description" content="FunkyBeatz - Oficjalna strona formacji Funkybeatz & MANAGEMENT, BOOKING KONCERTÓW: tel. +48 730 359 528 / 511 284 414 lub alexd.mikec@gmail.com">
   <meta name="keywords" content="FunktyBeatz muzyka sound dj party tychy imprezy ekstaza club electro zabawa formacja set">
+  <link rel="shortcut icon" href="img/log.jpg">
   <meta name="author" content="Wasiak Szymon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Funkybeatz - Offical</title>
 </head>
 <body style="background:black;" onload="start()">
-<div id="start" class="startPage container-fluid"></div>
+<div id="start" class="startPage container-fluid">
+<div class="row">
+    <div class="col-1"></div>
+    <div id="cl" class="logo col-10"></div>
+    <div class="col-1"></div>
+</div><center>
+<button id="but" type="button" class="btn btn-secondary btn-lg">Kliknij tu &uarr;</button>
+<a href="#aboutUS"><button id="butt" type="button" class="btn btn-secondary btn-lg">Przewiń video &darr;</button></a>
+</center>
+</div>
 
 <nav id="mynav" class="menu container-fluid">
        <div class="row hidden-sm-down">
@@ -52,10 +62,11 @@
        <div class="col titleAbout">O nas</div>
    </div>
     <div class="row hidden-sm-down">
-      <div class="col-1"></div>
        <div class="col-4"><center>
         <img id="fir" class="spiral" src="img/vinyl-face.png"></center></div>
-        <div class="col-2"></div>
+        <div class="col-4"><center>
+            <img src="img/logo_face.png" width="300" height="300"></center>
+        </div>
         <div class="col-4"><center>
         <img id="thi" class="spiral" src="img/vinyl-face2.png"></center></div>
     </div>
@@ -113,6 +124,8 @@ Poza indywidualnym podejściem i doborem repertuaru posiadają jedyny w swoim ro
                 <button id="stop" class="col-2"></button>
                 <button id="next" class="col-2"></button>
             <div class="clearfix"></div>
+            <button id="showplaylist" type="button" class="btn btn-secondary btn-md">Rozwiń playliste &darr;</button>
+            <button id="hideplaylist" type="button" class="btn btn-secondary btn-md">Schowaj playliste &uarr;</button>
             <ul id="playlist">
                 <li song="media/Project X.mp3" title="Project X">Project X</li>
             </ul>
@@ -128,10 +141,16 @@ Poza indywidualnym podejściem i doborem repertuaru posiadają jedyny w swoim ro
         <div class="title col">Oferta</div>
     </div>   
     <div class="row hidden-sm-down">
-        <div class="text" style="font-size:30px;padding:8rem;">Funkybeatz (Alex & Mike) - nietuzinkowa i ponadprzeciętna formacja DJ's. Poza indywidualnym podejściem i doborem repertuaru posiadają jedyny w swoim rodzaju charakterystyczny styl. Dwójka ambitnych i charyzmatycznych DJ'ów rozkręci każdą klubową imprezę. Nie wiesz komu powierzyć dużą imprezę? A może poszukujesz dobrych setów na swoją domówkę? Właściwym wyborem jest tylko formacja Funkybeatz !</div>
+        <div class="text" style="font-size:30px;padding:8rem;">Funkybeatz (Alex & Mike) - nietuzinkowa i ponadprzeciętna formacja DJ's. Poza indywidualnym podejściem i doborem repertuaru posiadają jedyny w swoim rodzaju charakterystyczny styl. Dwójka ambitnych i charyzmatycznych DJ'ów rozkręci każdą klubową imprezę. Nie wiesz komu powierzyć dużą imprezę? A może poszukujesz dobrych setów na swoją domówkę? Właściwym wyborem jest tylko formacja Funkybeatz !
+        <br><br>
+            <a href="#contact"><button type="button" class="btn btn-success btn-lg">Skontaktuj się &darr;</button></div></a>
     </div> 
         <div class="row hidden-md-up">
-        <div class="text" style="font-size:18px;padding:1rem;">Funkybeatz (Alex & Mike) - nietuzinkowa i ponadprzeciętna formacja DJ's. Poza indywidualnym podejściem i doborem repertuaru posiadają jedyny w swoim rodzaju charakterystyczny styl. Dwójka ambitnych i charyzmatycznych DJ'ów rozkręci każdą klubową imprezę. Nie wiesz komu powierzyć dużą imprezę? A może poszukujesz dobrych setów na swoją domówkę? Właściwym wyborem jest tylko formacja Funkybeatz !</div>
+        <div class="text" style="font-size:18px;padding:1rem;">Funkybeatz (Alex & Mike) - nietuzinkowa i ponadprzeciętna formacja DJ's. Poza indywidualnym podejściem i doborem repertuaru posiadają jedyny w swoim rodzaju charakterystyczny styl. Dwójka ambitnych i charyzmatycznych DJ'ów rozkręci każdą klubową imprezę. Nie wiesz komu powierzyć dużą imprezę? A może poszukujesz dobrych setów na swoją domówkę? Właściwym wyborem jest tylko formacja Funkybeatz !
+        <br><br>
+        <a href="#contact"><button type="button" class="btn btn-success btn-sm">Skontaktuj się &darr;</button></a>
+        </div>
+        
     </div> 
     
 </div>
@@ -148,7 +167,11 @@ Poza indywidualnym podejściem i doborem repertuaru posiadają jedyny w swoim ro
             <img src="img/icon_tel.png" width="180" height="180"><br>
             <p>511-284-414</p>
         </center></div>
-        
+     <div class="col"><center>
+           <br><br><br>
+            <img src="img/icon_tel.png" width="180" height="180"><br>
+        <p>730-359-528</p>
+        </center></div>    
         <div class="col"><center>
            <br><br><br>
             <img src="img/icon_email.png" width="220" height="180"><br>
@@ -163,6 +186,10 @@ Poza indywidualnym podejściem i doborem repertuaru posiadają jedyny w swoim ro
        
     <div class="textContact row justify-content-center hidden-md-up">
         <div class="col-12"><center>
+            <img src="img/icon_tel.png" width="90" height="90"><br>
+            <p>730-359-528</p>
+        </center></div>
+         <div class="col-12"><center>
             <img src="img/icon_tel.png" width="90" height="90"><br>
             <p>511-284-414</p>
         </center></div>
@@ -200,8 +227,6 @@ Poza indywidualnym podejściem i doborem repertuaru posiadają jedyny w swoim ro
 
 <script type="text/javascript">
 function start(){
-        document.getElementById("thi").style.animationPlayState="paused";
-        document.getElementById("fir").style.animationPlayState="paused";
         document.getElementById("sec").style.animationPlayState="paused";
 }
 </script>

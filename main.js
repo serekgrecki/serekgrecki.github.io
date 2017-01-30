@@ -1,7 +1,12 @@
 $(document).ready(function(){
+    $('#butt').hide();
+    $('#hideplaylist').hide();
+    $('#playlist').slideUp("slow");
+    
   // Add scrollspy to <body>
-  $('body').scrollspy({target: ".navbar", offset: 50});   
-
+  $('body').scrollspy({target: ".navbar", offset: 50});    
+    $('body').scrollspy({target: ".div", offset: 50}); 
+    
   // Add smooth scrolling on all links inside the navbar
   $("#mynav a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
@@ -23,7 +28,50 @@ $(document).ready(function(){
       });
     }  // End if
   });
+     $("#offer a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+    
+      $("#start a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+    
 });
+
     
     
     
@@ -140,3 +188,63 @@ function showDuration(){
 		$('#progress').css('width',value+'%');
 	});
 }
+
+$('#cl').click(function() {
+        $('#cl').slideToggle("slow",function(){
+            $('#cl').html("<center><iframe class='col-10' id='yt' src='https://www.youtube.com/embed/6kcIhjQVp2g?rel=0&autoplay=1' frameborder='0' allowfullscreen></iframe></center>");
+        });
+        $('#cl').slideToggle("slow"); 
+        $('#but').hide();
+        $('#butt').show();
+});
+
+$('#butt').click(function(){
+    $('#yt').attr('src', '');
+        $('#but').show();
+        $('#butt').hide();
+});
+
+$('#but').click(function() {
+            $(this).removeClass("logo");
+        $('#cl').slideToggle("slow",function(){
+            $('#cl').html("<center><iframe class='col-10'  id='yt' src='https://www.youtube.com/embed/6kcIhjQVp2g?rel=0&autoplay=1' frameborder='0' allowfullscreen></iframe></center>");
+        });
+        $('#cl').slideToggle("slow"); 
+        $('#but').hide();
+        $('#butt').show();
+    });
+$('#fir').click(function()
+               {
+     $('#rowekFull').slideToggle("slow",function(){
+            $('#rowekFull').html("<div id='col1' class='col textAbout'>opis1</div>");
+        });
+        $('#rowekFull').slideToggle("slow");
+        $('#fir').css("filter","opacity(1)");
+        $('#fir').css("filter","brightness(2)");
+        $('#thi').css("filter","opacity(0.5)");
+        $('#thi').css("filter","brightness(0.5)");
+});
+$('#thi').click(function()
+               {
+         $('#rowekFull').slideToggle("slow",function(){
+            $('#rowekFull').html("<div id='col1' class='col textAbout'>opis2</div>");
+        });
+        $('#rowekFull').slideToggle("slow");
+        $('#fir').css("filter","opacity(0.5)");
+        $('#fir').css("filter","brightness(0.5)");
+        $('#thi').css("filter","opacity(1)");
+        $('#thi').css("filter","brightness(2)");
+    
+});
+$('#hideplaylist').click(function()
+{
+    $('#showplaylist').show();
+    $('#hideplaylist').hide();
+    $('#playlist').slideUp("slow");
+});
+$('#showplaylist').click(function()
+ {
+    $('#showplaylist').hide();
+    $('#hideplaylist').show();
+    $('#playlist').slideDown("slow");
+});

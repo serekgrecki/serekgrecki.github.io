@@ -9,6 +9,7 @@ $(document).ready(function(){
   setInterval(function(){
     image.fadeOut(500, function(){
       image.css("background-image","url("+images[count++]+")");
+        image.css("background-position","center");
       image.fadeIn(500);
     });
     if(count == images.length)

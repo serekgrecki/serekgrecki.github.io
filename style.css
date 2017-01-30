@@ -1,9 +1,21 @@
 body{
 }
 
+.logo
+{
+    background: url(img/logo_bg.png) center;
+    background-size: cover;
+    height: 70vh;
+}
+.logo:hover
+{
+    cursor: pointer;
+    filter: brightness(0.7);
+}
+iframe {height:60vh; margin: 1rem;}
 .startPage
 {
-    background: url("img/startpage.jpg") center center no-repeat;
+    background: black;
     background-size: cover;
     height: 90vh;
 }
@@ -26,6 +38,7 @@ body{
 .projectsPage
 {
     background-image: url(img/startpage.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -33,6 +46,7 @@ body{
 .offerPage
 {
     background-image: url(img/offer.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -150,12 +164,14 @@ body{
   background-repeat:no-repeat;
   height: 46vh;
   filter:opacity(0.5);
+    filter: brightness(0.5);
 }
 
 .spiral:hover
 {
     filter:opacity(1);
     filter:brightness(2);
+    cursor: pointer;
 }
 @keyframes spin {
   0% { transform: rotate(360deg); }
@@ -228,13 +244,8 @@ body{
 }
 
 #conta {
-    background: rgba(51, 51, 51, 0.1);
     overflow: auto;
     margin: 2rem auto;
-    border: #666 solid 2px;
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
-    border-radius:10px;
     padding-top: 1rem;
 }
 
@@ -242,6 +253,8 @@ body{
 {
     text-align: center;
     font-weight: bold;
+    background: #666;
+    padding: 5px;
 }
 
 input#volume{
